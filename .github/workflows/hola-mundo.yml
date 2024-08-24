@@ -1,9 +1,9 @@
 name: Run holamundodiego.js
 
 on: 
-  push:  # Esto ejecutará el workflow cuando haya un push en cualquier rama
+  push:
     branches:
-      - main  # O la rama de tu preferencia
+      - main
 
 jobs:
   run-holamundo:
@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: Check out the repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4  # Se ha actualizado a la versión más reciente
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4  # Se ha actualizado a la versión más reciente
       with:
-        node-version: '20'  # O la versión de Node.js que estés utilizando
+        node-version: '20'  # Usar la versión más reciente de Node.js
 
     - name: Run holamundodiego.js
       run: node holamundodiego.js
