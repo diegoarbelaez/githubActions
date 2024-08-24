@@ -1,10 +1,6 @@
 name: Run holamundodiego.js
 
-on: 
-  push:
-    branches:
-      - aprendiendo-github-actions
-
+on: [push]
 jobs:
   run-holamundo:
     runs-on: ubuntu-latest
