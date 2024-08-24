@@ -3,7 +3,7 @@ name: Run holamundodiego.js
 on: 
   push:
     branches:
-      - main
+      - aprendiendo-github-actions
 
 jobs:
   run-holamundo:
